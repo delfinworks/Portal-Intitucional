@@ -20,7 +20,7 @@ Modificar configuration.php en
   var $password = 'your password';
 ```
 
-Montar la base dados db/opp_new.sql
+Montar la base datos db/opp_new.sql
 
 Listo! 
 
