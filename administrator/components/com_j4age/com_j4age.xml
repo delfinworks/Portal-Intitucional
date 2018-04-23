@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+    <name>j4age</name>
+    <author>j4age Team</author>
+    <creationDate>2011-02-02</creationDate>
+    <copyright>Copyright(C) 2009-2011 j4age Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>j4age(at)ecomize.com</authorEmail>
+    <authorUrl>www.ecomize.com</authorUrl>
+    <version>4.0.2.1.59 RC</version>
+    <description></description><!-- description should be EMPTY !  In j1.5.9 it is used only during installation process. In j1.5.6 it is not used in any tips, infos etc. Reason: We generate Own after installation page. Any info here broke that page! -->
+
+    <installfile>install.com_j4age.php</installfile>
+    <uninstallfile>uninstall.com_j4age.php</uninstallfile>
+
+    <administration>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB.com_j4age.ini</language>
+            <!--language tag="de-DE">language/de-DE.com_j4age.ini</language>
+            <language tag="es-ES">language/es-ES.com_j4age.ini</language>
+            <language tag="fr-FR">language/fr-FR.com_j4age.ini</language>
+            <language tag="nb-NO">language/nb-NO.com_j4age.ini</language>
+            <language tag="pl-PL">language/pl-PL.com_j4age.ini</language>
+            <language tag="pt-BR">language/pt-BR.com_j4age.ini</language>
+            <language tag="pt-PT">language/pt-PT.com_j4age.ini</language>
+            <language tag="ru-RU">language/ru-RU.com_j4age.ini</language>
+            <language tag="sv-SE">language/sv-SE.com_j4age.ini</language-->
+        </languages>
+
+        <!--  menu is updated during installation process because of icons and being multilangual -->
+        <menu task="js_view_statistics_default"     img="../administrator/components/com_j4age/images/logo-icon.png">j4age Statistics</menu>
+        <!-- mic: we do not use submenus anymore - reply - at: yes we use, we wait for joomla fix to make it works, below lines should be uncomented and tested -->
+        <submenu>
+            <menu controller="main"        task="js_view_statistics_default" img="../administrator/components/com_j4age/images/icon-16-js_statistics.png">Statistics</menu>
+	        <menu controller="main"        task="graphics"                   img="../administrator/components/com_j4age/images/icon-16-js_graphics.png">Graphics</menu>
+            <menu controller="maintenance" task="js_view_exclude"            img="../administrator/components/com_j4age/images/icon-16-js_exclude.png">Exclude Manager</menu>
+            <menu controller="maintenance" task="js_view_configuration"      img="../administrator/components/com_j4age/images/icon-16-preferences.png">Configuration</menu>
+            <menu controller="maintenance" task="js_view_tools"              img="../administrator/components/com_j4age/images/icon-16-js_configuration.png">Maintenance</menu>
+	        <menu controller="main"        task="js_view_status"             img="../administrator/components/com_j4age/images/icon-16-js_status.png">Status</menu>
+	        <menu controller="maintenance" task="js_view_tools"              img="../administrator/components/com_j4age/images/icon-16-js_configuration.png">Extensions</menu>
+        </submenu>
+        <!-- -->
+
+        <files folder="admin">
+            <folder>api</folder>
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>database</folder>
+            <folder>extensions</folder>
+            <folder>images</folder>
+            <folder>install</folder>
+            <folder>models</folder>
+	        <folder>views</folder>
+	        <folder>libraries</folder>
+
+            <filename>index.html</filename>
+            <filename>admin.j4age.php</filename>
+            <filename>admin.j4age.html.php</filename>
+            <filename>install.com_j4age.php</filename>
+            <filename>install.com_j4age.html.php</filename>
+	        <filename>uninstall.com_j4age.php</filename>
+	        <filename>configuration.php</filename>
+        </files>
+    </administration>
+
+    <files folder="site">
+        <folder>images</folder>
+        <filename>index.html</filename>
+        <filename>j4age.html.php</filename>
+        <filename>j4age.php</filename>
+        <filename>j4age.inc.php</filename>
+        <filename>stand.alone.j4age.inc.php</filename>
+    </files>
+</install>

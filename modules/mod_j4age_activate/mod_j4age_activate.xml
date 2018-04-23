@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5.0">
+    <name>j4age Activation</name>
+    <author>j4age Team</author>
+	<creationDate>2011-01-31</creationDate>
+	<copyright>Copyright(C) 2009-2011 j4age Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>j4age(at)ecomize.com</authorEmail>
+    <authorUrl>www.ecomize.com</authorUrl>
+	<version>4.0.2.1.122 RC</version>
+
+    <description>
+        <![CDATA[
+            j4age Activation Module - Activates the j4age Statistics (Component).<br />
+            <br />
+            Activation Module is extension to j4age Statistics component/engine (com_j4age).<br />
+            <br />
+            <br />
+            <b>REMEMBER TO PUBLISH/ENABLE THIS MODULE!</b><br />
+            <br />
+        ]]>
+    </description>
+
+    <files>
+        <filename module="mod_j4age_activate">mod_j4age_activate.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <params>
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix"
+               description="PARAMMODULECLASSSUFFIX"/>
+    </params>
+
+    <params group="advanced">
+        <!-- we show cache option to ensure users (and Joomla CMS) that cache is off -->
+        <param name="cache" type="list" default="0" label="Caching"
+               description="Select whether to cache the content of this module">
+            <!-- <option value="1">Use global</option> cache has no sense for this module! -->
+            <option value="0">No caching</option>
+        </param>
+        <!-- <param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" /> -->
+    </params>
+</install>

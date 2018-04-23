@@ -1,0 +1,9 @@
+﻿#maincolumn_full { width: 960px; overflow:}
+
+#maincolumn_full #latest div.module, #maincolumn_full  #popular div.module ,
+#maincolumn_full #latest, #maincolumn_full  #popular { width: 463px;}
+
+#maincolumn_left #latest div.module, #maincolumn_left  #popular div.module ,
+#maincolumn_left #latest, #maincolumn_left  #popular ,
+#maincolumn_right #latest div.module, #maincolumn_right  #popular div.module ,
+#maincolumn_right #latest, #maincolumn_right  #popular { width: 358px; }

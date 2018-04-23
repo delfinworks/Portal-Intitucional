@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="js_ext" version="1.5.0" group="joomlastats">
+        <!--
+             !! Do not generalise the author and contact details to Joomlastats Team or similar!!
+        -->
+        <name>Ip2Nation</name>
+        <author>Andreas Halbig</author>
+        <creationDate>March 2010</creationDate>
+        <copyright>All-rights reserved</copyright>
+		<authorEmail>j4age(at)ecomize.com</authorEmail>
+		<authorUrl>http://www.ecomize.com</authorUrl>
+        <license>This is not published under the GNU/GPL Licence.
+	        You can modify this software for your personal requirements, but
+	        it is not allowed to publish a modified version to anyone
+	        without approval of the owner of this software component.
+	        However, we are happy to apply your modifications to the official release!
+	        Reusing our intellectual knowledge is not allowed without written permission for
+	        any software, even if it is just partially reused. All rights are reserved!</license>
+        <version>1.0.1</version>
+        <description>Ip2Nation Integration for JoomlaStats</description>
+        <files>
+            <filename js_ext="plugin_ip2nation">extensions/plugin_ip2nation.php</filename>
+            <filename js_ext="plugin_ip2nation">extensions/ip2nation/data.ip2nation.php</filename>
+        </files>
+        <params>
+                <param name="active" type="list" default="1" label="Integration Active/Inactive" description="Should the ip2nation be activated">
+                        <option value="0">Off</option>
+                        <option value="1">On</option>
+                </param>
+        </params>
+</install>

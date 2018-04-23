@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>siteground-j15-81</name>
+	<version>1.0.0</version>
+	<creationDate>07/2009</creationDate>
+	<author>SiteGround</author>
+	<authorEmail>templates@siteground.com</authorEmail>
+	<authorUrl>http://www.siteground.com</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<description>TEMPLATE_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>templates.php</filename>
+		
+		<filename>images/123_bg.png</filename>
+		<filename>images/123_l_img.png</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/top_menu.png</filename>
+		<filename>images/top_bg_r.png</filename>
+		<filename>images/top_bg_l.png</filename>
+		<filename>images/top_bg_full.png</filename>
+		<filename>images/top_bg.png</filename>
+		<filename>images/top.png</filename>
+		<filename>images/t_box.png</filename>
+		<filename>images/search_input_bg.png</filename>
+		<filename>images/search_btn.png</filename>
+		<filename>images/red_btn.png</filename>
+		<filename>images/pillmenu_table_td_bg.png</filename>
+		<filename>images/pillmenu_div_separator.png</filename>
+		<filename>images/main_h3_box.png</filename>
+		<filename>images/main_box_bg.png</filename>
+		<filename>images/m_bg_r.png</filename>
+		<filename>images/m_bg_l.png</filename>
+		<filename>images/m_bg_full.png</filename>
+		<filename>images/m_bg.png</filename>
+		<filename>images/logo.png</filename>
+		<filename>images/li.png</filename>
+		<filename>images/header.png</filename>
+		<filename>images/h3_rc.png</filename>
+		<filename>images/h3_lc.png</filename>
+		<filename>images/body_bg.png</filename>
+		<filename>images/blue_btn.png</filename>
+		<filename>images/black_btn.png</filename>
+		<filename>images/b_box.png</filename>
+		<filename>images/b_bg_r.png</filename>
+		<filename>images/b_bg_l.png</filename>
+		<filename>images/b_bg_full.png</filename>
+		<filename>images/b_bg.png</filename>
+		<filename>images/red_car.jpg</filename>
+		<filename>images/blue_car.jpg</filename>
+		<filename>images/red_arrow.gif</filename>
+		<filename>images/main_red_arrow.gif</filename>
+		<filename>images/main_blue_arrow.gif</filename>
+		<filename>images/gray_arrow.gif</filename>
+		<filename>images/blue_arrow.gif</filename>
+		
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/editor.css</filename>
+		<filename>css/ie6.css</filename>
+	</files>
+	
+	<positions>
+		<position>user3</position>
+		<position>user4</position>
+		<position>left</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>right</position>
+		<position>debug</position>
+	</positions>
+
+	<languages>
+		<language tag="en-GB">en-GB.tpl_siteground-j15-81.ini</language>
+	</languages>
+	<administration>
+	    <languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_siteground-j15-81.ini</language>
+		</languages>
+    </administration>
+</install>

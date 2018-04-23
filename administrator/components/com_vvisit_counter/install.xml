@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5" method="upgrade">
+	<name>VVisit_Counter</name>
+	<creationDate>2009-12-05</creationDate>
+	<author>VINAORA</author>
+	<authorEmail>admin@vinaora.com</authorEmail>
+	<authorUrl>http://vinaora.com</authorUrl>
+	<copyright>Copyright (C) 2007 - 2009 VINAORA. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>2.0</version>
+	<description>DESC_VVISIT_COUNTER</description>
+	
+	<installfile>install/install.php</installfile>
+	<uninstallfile>install/uninstall.php</uninstallfile>
+	
+	<!-- VINAORA: Install Database -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+			<file driver="mysql">sql/install.mysql.sql</file>
+		</sql>
+	</install>
+	
+	<!-- VINAORA: Uninstall Database -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+			<file driver="mysql">sql/uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	
+	<!-- VINAORA: Front-end Folders and Files -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>vvisit_counter.php</filename>
+		<folder>helpers</folder>
+	</files>
+	
+	<!-- VINAORA: Front-end Language Files -->
+	<languages folder="language/site">
+		<language tag="en-GB">en-GB.com_vvisit_counter.ini</language>
+   	</languages>
+
+	<!-- VINAORA: Front-end Media Files -->
+	<media folder="site" destination="com_vvisit_counter" />
+ 
+	<!-- VINAORA: Back-end -->
+	<administration>
+		<menu>Vinaora Visitors Counter</menu>
+		
+		<!-- VINAORA: Back-end Folders and Files -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>vvisit_counter.php</filename>
+			<folder>helpers</folder>
+			<folder>images</folder>
+			<folder>install</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>views</folder>
+		</files>
+		
+		<!-- VINAORA: Back-end Language Files -->
+		<languages folder="language/admin">
+			<language tag="en-GB">en-GB.com_vvisit_counter.ini</language>
+			<language tag="en-GB">en-GB.com_vvisit_counter.menu.ini</language>
+    	</languages>
+	</administration>
+	
+	<params />
+	
+	<!-- VINAORA: Install Modules -->
+	<modules>
+		<module module="mod_vvisit_counter" title="Vinaora Visitors Counter" position="left" order="-1" client="site">
+			<files folder="mod_vvisit_counter">
+				<folder>css</folder>
+				<folder>images</folder>
+				<folder>tmpl</folder>
+				
+				<file>index.html</file>
+				<file>helper.php</file>
+				<file>mod_vvisit_counter.php</file>
+				<file>mod_vvisit_counter.xml</file>
+			</files>
+
+			<languages folder="mod_vvisit_counter/language">
+				<language tag="en-GB">en-GB.mod_vvisit_counter.ini</language>
+			</languages>
+			
+			<!-- VINAORA: Front-end Media Files -->
+			<media folder="admin" destination="com_vvisit_counter" />
+			
+		</module>
+	</modules>
+	
+	<!-- VINAORA: Install Plugins -->
+	<plugins>
+		<plugin plugin="vvisit_counter" title="Vinaora Visitors Counter" order="-100" group="system">
+			<files folder="plg_vvisit_counter">
+				<folder>vvisit_counter</folder>
+				<file>vvisit_counter.php</file>
+				<file>vvisit_counter.xml</file>
+			</files>
+
+			<languages folder="plg_vvisit_counter/language">
+				<language tag="en-GB">en-GB.plg_system_vvisit_counter.ini</language>
+			</languages>
+
+			<media />
+		</plugin>
+	</plugins>
+	
+	<!-- VINAORA: Check and enabled modules/plugins -->
+	<check>
+		<directory>/modules</directory>
+		<directory>/plugins/system</directory>
+		<extension name="vvisit_counter" type="plugins" field="name" value="Vinaora Visitors Counter">element='vvisit_counter'</extension>
+		<extension name="vvisit_counter" type="plugins" field="published" value="1">element='vvisit_counter'</extension>
+		<extension name="vvisit_counter" type="plugins" field="ordering" value="1">folder='system'</extension>
+		<extension name="mod_vvisit_counter" type="modules" field="published" value="1">module='mod_vvisit_counter'</extension>
+		<extension name="mod_vvisit_counter" type="modules" field="showtitle" value="1">module='mod_vvisit_counter'</extension>
+	</check>
+</install>

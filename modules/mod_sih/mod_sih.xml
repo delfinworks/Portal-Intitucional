@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Simple Image Holder</name>
+	<author>Omar Muhammad</author>
+	<creationDate>18/12/2009</creationDate>
+	<copyright>The Knight of Baghdad</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@omar84.com</authorEmail>
+	<authorUrl>http://omar84.com</authorUrl>
+	<version>1.5.12</version>
+	<description>
+	<![CDATA[Simple Image Holder Module v1.5.12 was installed successfully..<br />
+	if you like it, you can support it by donating at <a target='_blank' href='http://omar84.com/'>http://omar84.com/</a>]]>
+	</description>
+	<files>
+		<filename module="mod_sih">mod_sih.php</filename>
+		<filename>sih.js</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@1" type="spacer" default="&lt;b&gt;General Settings:&lt;/b&gt;" label="" description="" />
+		<param name="file" type="textarea" cols="40" rows="1" default="" label="File Location" description="Location of File, examples:&lt;br /&gt;&lt;b&gt;Holding Local Files:&lt;/b&gt;&lt;br /&gt;images/stories/powered_by.png&lt;br /&gt;images/flash/clock.swf&lt;br /&gt;&lt;b&gt;Holding External Files:&lt;/b&gt;&lt;br /&gt;http://cdn.joomla.org/images/logo.png" />
+		<param name="width" type="text" default="" label="Width" description="Width of the (image/flash) (in pixles), leave empty to use the default width" />
+		<param name="height" type="text" default="" label="Height" description="Height of the (image/flash) (in pixles), leave empty to use the default height" />
+		<param name="align" type="list" default="center" label="Align" description="(image/flash) alignment">
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+		</param>
+		<param name="txt1" type="textarea" cols="40" rows="2" default="" label="Text Above" description="An optional text to put above the (image/flash), leave empty for no text" />
+		<param name="txt2" type="textarea" cols="40" rows="2" default="" label="Text Below" description="An optional text to put below the (image/flash), leave empty for no text" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@2" type="spacer" default="&lt;b&gt;Image Info (use when holding image files: jpg, png, gif, etc..):&lt;/b&gt;" label="" description="" />
+		<param name="alt" type="text" default="" label="Alternate Text" description="Text to display when mouseover the image, leave empty to disable" />
+		<param name="link" type="text" default="" label="Link" description="Link the image to a webpage, examples:&lt;br /&gt;&lt;b&gt;Internal Links:&lt;/b&gt;&lt;br /&gt;administrator/&lt;br /&gt;&lt;b&gt;External Links:&lt;/b&gt;&lt;br /&gt;http://google.com&lt;br /&gt;&lt;b&gt;or leave empty for no linking&lt;/b&gt;" />
+		<param name="page" type="list" default="" label="Link Type" description="when you click the image, it opens the link in either a new window or in the same window">
+			<option value="new_page">New Window</option>
+			<option value="same_page">Same Window</option>
+		</param>
+		<param name="opacity" type="text" default="" label="Image Opcaity" description="Opacity of Image (integer from 0 to 100), leave empty for a fully opaque image" />
+		<param name="opacity2" type="text" default="" label="Image Opcaity On Mouse Over" description="Opacity of Image when the user puts the mouse over it (integer from 0 to 100), leave empty to keep the same opacity" />
+		<param name="img_id" type="text" default="" label="Image Class" description="Give a unique Class ID to this image, so that you can style it idivisually in your css file, or leave empty for automatic Class generation (note: the class name must contain no spaces, and must be unique to each copy of this module)" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@3" type="spacer" default="&lt;b&gt;Flash Info (use when holding flash files: swf):&lt;/b&gt;" label="" description="" />
+		<param name="name" type="text" default="" label="Flash Name/ID" description="Identifies the Flash movie to the host environment." />
+		<param name="quality" type="list" default="high" label="Flash Quality" description="Quality setting to use in the Flash Player.">
+			<option value="best">Best</option>
+			<option value="high">High</option>
+			<option value="medium">Medium</option>
+			<option value="low">Low</option>
+			<option value="autohigh">Auto High</option>
+			<option value="autolow">Auto Low</option>
+		</param>
+		<param name="loop" type="list" default="Yes" label="Flash Looping" description="Specifies whether the Flash movie repeats indefinitely or stops when it reaches the last frame.">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="wmode" type="list" default="window" label="Flash Mode" description="Sets the Window Mode property of the Flash movie for transparency, layering, and positioning in the browser.">
+			<option value="window">Window</option>
+			<option value="opaque">Opaque</option>
+			<option value="transparent">Transparent</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@4" type="spacer" default="&lt;b&gt;Publish by date (Use if you want to publish your file according to dates):&lt;/b&gt;" label="" description="" />
+		<param name="pubdate" type="list" default="0" label="Enable (Pulblish by date) Option" description="use if you want to publish the (image/flash) in a specific date(s)">
+			<option value="1">Yes (Publish by Date)</option>
+			<option value="0">No (Always Publish)</option>
+		</param>
+		<param name="pdate" type="text" default="" label="Start Date" description="Date to start publishing the (image/flash), format: dd-mm-yyyy" />
+		<param name="udate" type="text" default="" label="End Date" description="Date to end publishing the (image/flash), format: dd-mm-yyyy" />
+		<param name="@5" type="spacer" default="The date should look like this example: 17-5-2009." label="" description="" />
+		<param name="@6" type="spacer" default="If you want the (image/flash) to be published periodically, use 'x' instead of the month or the year, for example, writing: 1-x-2009 as the (start date) will publish the (image/flash) at the first day of every month of 2009, while writing: 14-2-x  will publish the (image/flash) at valentine's day every year, writing: 1-x-x will publish the (image/flash) at the start of every month of every year. and the same thing applies for the (end date)." label="" description="" />
+		<param name="@7" type="spacer" default="If you leave a date field empty, it will be considered as (always publish) for example, leaving the (start date) empty and writing a date at the (end date) will publish the (image/flash) until the end date, and vice verca." label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@8" type="spacer" default="You are using &lt;b&gt;Simple Image Holder Module v1.5.12&lt;/b&gt; released on &lt;b&gt;18/12/2009&lt;/b&gt; under &lt;b&gt;GNU/GPL&lt;/b&gt; License." label="" description="" />
+		<param name="@9" type="spacer" default="&lt;iframe src='http://omar84.com/latest/sih.html' width='100%' height='40' frameborder='0' scrolling='no'&gt;&lt;/iframe&gt;" label="" description="" />
+		<param name="@10" type="spacer" default="To get more useful free extensions, visit:	&lt;a target='_blank' href='http://extensions.joomla.org/extensions/owner/theknight/1'&gt;The Author's JED Page&lt;/a&gt;." label="" description="" />
+		<param name="@11" type="spacer" default="To support this extension, donate at: &lt;a target='_blank' href='http://omar84.com/'&gt;The Author's HomePage&lt;/a&gt;." label="" description="" />
+		<param name="@12" type="spacer" default="If you really like this extension, but not enough to donate ;) &lt;br /&gt;you can write a small review at: &lt;a target='_blank' href='http://extensions.joomla.org/extensions/photos-a-images/images/4889'&gt;The Extension's HomePage&lt;/a&gt;." label="" description="" />
+		<param name="@13" type="spacer" default="If you have any problems or questions regarding this extension, please email me at: admin@omar84.com" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+	</params>
+</install>

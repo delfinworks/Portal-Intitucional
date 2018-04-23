@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="1.5" client="administrator">
+	<tag>ca-ES</tag>
+	<name>Catalan</name>
+	<description>Catalan language administrator pack for Joomla</description>
+	<version>1.5.18</version>
+	<creationDate>2010-05-29</creationDate>
+	<author>Catalan Joomla Translation Team</author>
+	<authorUrl>www.joomla.cat</authorUrl>
+	<authorEmail>dverger@joomla.cat</authorEmail>
+	<copyright>Copyright (C) 2005 - 2010 Open Source Matters.  All rights reserved.</copyright>
+	<copyright>Copyright (C) Translation 2008 - 2009  Catalan Joomla Translation Team - joomla.cat</copyright>
+	<copyright>Copyright (C) Translation 2010  Softcatalà</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<metadata>
+		<name>Catalan</name>
+		<tag>ca-ES</tag>
+		<rtl>0</rtl>
+		<locale>ca_ES.utf8, ca_ES.UTF-8, ca-ES, ca_ES, ca_ES.UTF-8@euro, ca_AD.utf8, ca_AD.UTF-8, ca_AD, ca_FR.utf8, ca_FR.UTF-8, ca_FR, ca_IT.utf8, ca_IT.UTF-8, ca_IT, Catalan_Standard, catalan, ca</locale>
+		<winCodePage>iso-8859-1</winCodePage>
+		<backwardLang>catalan</backwardLang>
+	</metadata>
+	<params />
+</metafile>

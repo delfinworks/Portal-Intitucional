@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="js_ext" version="1.5.0" group="joomlastats">
+        <!--
+             !! Do not generalise the author and contact details to Joomlastats Team or similar!!
+        -->
+        <name>Flags</name>
+        <author>Andreas Halbig</author>
+        <creationDate>January 2010</creationDate>
+        <copyright>GNU GPL</copyright>
+        <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+        <authorEmail>j4age(at)ecomize.com</authorEmail>
+        <authorUrl>http://www.ecomize.com</authorUrl>
+        <version>1.0.0</version>
+        <description>flag icons for j4age</description>
+        <files>
+            <filename js_ext="ext_flags">extensions/ext_flags.php</filename>
+        </files>
+        <files folder="site">
+	        <folder js_ext="ext_flags">images/browser-png-14x14-1</folder>
+	        <folder js_ext="ext_flags">images/os-png-14x14-1</folder>
+	        <folder js_ext="ext_flags">images/tld-png-16x11-1</folder>
+        </files>
+</install>
