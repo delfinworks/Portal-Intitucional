@@ -1,17 +1,19 @@
-# Portal Intitucional :globe_with_meridians:
-Portal Joomla para el manejo de noticias, descargas e imágenes validando sesiones  a través de Microsoft Active Directory
+# Business portal :globe_with_meridians:
+Portal Joomla for managing news, downloads and images validating sessions through Microsoft Active Directory
 
 ![](https://github.com/delfinworks/Portal-Intitucional/blob/master/images/opp1.jpg)
 
-## Requerimiento :white_check_mark:
+## Usage :white_check_mark:
 - Web Server Apache-2.2.15
 - PHP 5.2.13
 - MySQL 5.1.46
 - phpMyAdmin 3.3.3 
 
-## Configuración :gear:
+## Configuration :gear:
 
-Modificar configuration.php en
+****************************************************************************************
+System routing constants "configuracion.php"
+****************************************************************************************
 
 ```bash
   var $host = 'localhost';
@@ -20,10 +22,10 @@ Modificar configuration.php en
   var $password = 'your password';
 ```
 
-Montar la base datos db/opp_new.sql
+Mount database db/opp_new.sql
 
-Listo! 
+Ready!
 
-## Compatibilidad :triangular_ruler:
+## Compatibility :triangular_ruler:
 
-Exploradores modernos y IE11.
+Modern browsers and IE11.
