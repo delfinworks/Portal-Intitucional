@@ -1,7 +1,10 @@
+English | [Español](./README.es-US.md)
+
+
 # Business portal :globe_with_meridians:
 Portal Joomla for managing news, downloads and images validating sessions through Microsoft Active Directory
 
-![](https://github.com/delfinworks/Portal-Intitucional/blob/master/images/opp1.jpg)
+![](https://github.com/delfinworks/business-portal/blob/master/images/opp1.jpg)
 
 ## Usage :white_check_mark:
 - Web Server Apache-2.2.15
